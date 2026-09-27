@@ -70,6 +70,23 @@ As an admin, I want to assign roles to users, so they access only their tier's f
 
 ---
 
+### Use Cases Supported by This Epic
+
+| Use Case | Description | Required Features |
+|----------|-------------|-------------------|
+| **1. Search Information** | Find documents and answers to specific questions | 2.5 (Search), 2.3 (File Upload), 2.2 (History), 2.4 (Share) |
+| **2. Ask Common Knowledge Questions** | Ask general questions and get answers | 2.1 (Chat Interface), 2.2 (History), 2.4 (Share) |
+| **3. Draft/Write Text** | Collaborate with AI to draft documents | 2.1 (Chat), 2.3 (File Upload), 2.4 (Share) |
+| **4. Summarize Documents** | Upload docs and get summaries | 2.3 (File Upload), 2.1 (Chat), 2.2 (History) |
+
+**⚠️ Dependencies from other Epics:**
+- File Download: Epic 3.3 (needed for Draft/Summarize use cases)
+- File Preview: Epic 6.4 (needed for Search/Summarize use cases)
+- Model Selection: Epic 8.2 (needed for all use cases)
+- Response Formatting: Epic 3 (needed for all use cases)
+
+---
+
 ### Feature 2.1: Real-Time Chat Interface
 **Job to be Done**: Users want to send messages and get quick responses in a familiar chat format
 
@@ -180,6 +197,26 @@ As a user, I want to search my conversations by keyword, so I can quickly find r
 
 ---
 
+### Use Cases Supported by This Epic
+
+| Use Case | Description | Required Features |
+|----------|-------------|-------------------|
+| **1. Get Readable Answers** | Display Q&A responses in clear, formatted text with proper typography | 3.1 (Q&A Component) |
+| **2. Read Code Properly** | View code with syntax highlighting and copy functionality | 3.2 (Code Component) |
+| **3. View Data in Tables** | See structured data as formatted, sortable tables | 3.4 (Table Rendering) |
+| **4. Browse Search Results** | View lists of documents/results as organized cards | 3.5 (List & Card Rendering) |
+| **5. See Visual Content** | Display images, charts, diagrams inline in responses | 3.6 (Image & Media Rendering) |
+| **6. Take Action from Responses** | Click buttons in AI responses to refine or execute actions | 3.7 (Button & Interactive Elements) |
+| **7. Download Generated Content** | Export AI responses as files (PDF, CSV, DOC) | 3.3 (File Download) |
+
+**⚠️ Supports other Epics:**
+- Required by Epic 2 use cases (Ask Questions, Draft Text, Summarize, Search)
+- Required by Epic 5 use cases (bot responses need proper formatting)
+- Required by Epic 6 use cases (search results display with cards/lists)
+- Integrates with Epic 8 (theme/dark mode affects all component colors)
+
+---
+
 ### Feature 3.1: Q&A Component Rendering
 **Job to be Done**: Users want clear, readable answers formatted as proper chat messages
 
@@ -189,12 +226,16 @@ As a user, I want Q&A responses to render as formatted chat bubbles, so they're 
 **Definition of Done**:
 - [ ] Plain text renders as chat bubble
 - [ ] Bold, italic, links formatted correctly
-- [ ] Lists (bullet, numbered) render properly
-- [ ] Markdown is parsed and rendered
+- [ ] Markdown is parsed and rendered (bold, italic, strikethrough, blockquote)
 - [ ] Line breaks preserved
 - [ ] Code snippets inline render with monospace font
-- [ ] Works on mobile (text wrapping)
+- [ ] **Lists render properly** (bullet points, numbered lists, nested lists)
+- [ ] **Links are clickable and styled** with proper hover states
+- [ ] **Headings render with proper hierarchy** (h1-h6)
+- [ ] Works on mobile (text wrapping, responsive font sizes)
+- [ ] Follows design system for colors, typography, shadows
 - [ ] QC tested all text formats
+- [ ] Accessible: sufficient color contrast, semantic HTML
 
 ---
 
@@ -244,13 +285,96 @@ As a user, I want AI-generated tables to render as formatted tables, so I can re
 
 **Definition of Done**:
 - [ ] Markdown tables render as HTML tables
-- [ ] Table has headers and rows
-- [ ] Table is sortable by column (click header)
-- [ ] Mobile: table scrollable horizontally
-- [ ] Striped rows for readability
-- [ ] Border/padding correct
-- [ ] Export table to CSV button
+- [ ] Table has headers and rows with proper styling
+- [ ] Table header uses **bold font-semibold** with **surface-active background**
+- [ ] Table is **sortable by column** (click header to toggle asc/desc)
+- [ ] **Striped rows** for readability (alternating bg-surface, bg-surface-alt)
+- [ ] **Border/padding** follows design system (border-default, padding 12px)
+- [ ] Mobile: table scrollable horizontally with proper spacing
+- [ ] Export table to CSV button with design system styling
+- [ ] Hover effect on rows (surface-hover)
+- [ ] **Data alignment**: numbers right-aligned, text left-aligned
 - [ ] QC tested table rendering, sorting, export
+- [ ] Accessible: proper semantic HTML (thead, tbody, th, td)
+
+---
+
+### Feature 3.5: List & Card Component Rendering
+**Job to be Done**: Users want to view lists of items (search results, recommendations) as visually organized cards or lists, not plain text
+
+**User Story**:
+As a user, I want search results and item lists to display as organized cards or list items, so I can scan and interact with them easily
+
+**Definition of Done**:
+- [ ] **Unordered lists render as styled list items** with bullet points
+- [ ] **Ordered lists render with numbers** (1, 2, 3...)
+- [ ] **Nested lists supported** (up to 3 levels deep)
+- [ ] **Card list** - search results display as cards with:
+  - [ ] Card container: bg-surface-alt, rounded-lg, shadow-3, padding 16px
+  - [ ] Card title: text-lg, font-semibold, text-primary
+  - [ ] Card description: text-base, text-secondary, truncate at 3 lines
+  - [ ] Card metadata: text-sm, text-tertiary (date, source, relevance score)
+  - [ ] Card hover: shadow-4, scale 1.01 (optional interactive lift)
+- [ ] **List items** display with:
+  - [ ] Icon/avatar (optional, if provided)
+  - [ ] Title and description
+  - [ ] Action buttons (read, share, delete) if applicable
+  - [ ] Hover state with bg-surface-hover
+- [ ] **Pagination or "Load more" button** for lists > 10 items
+- [ ] Search results highlight matching keywords
+- [ ] Mobile: single-column layout, full-width cards
+- [ ] Follows design system: colors, typography, shadows, spacing
+- [ ] QC tested list rendering, card interactions, pagination
+
+---
+
+### Feature 3.6: Image & Media Rendering
+**Job to be Done**: Users want to see images, charts, and media in responses, not just text references
+
+**User Story**:
+As a user, I want AI responses to display images and media (charts, diagrams), so I can see visual content
+
+**Definition of Done**:
+- [ ] **Images render inline** in chat message
+- [ ] Image has:
+  - [ ] Max-width: 90% of chat width (mobile-friendly)
+  - [ ] Rounded corners: rounded-lg (12px)
+  - [ ] Shadow: shadow-3
+  - [ ] Border: 1px solid border-light (optional)
+- [ ] **Image alt text** displayed below or on hover
+- [ ] **Caption/description** rendered below image in text-secondary
+- [ ] Image is **clickable to expand** (light box/modal view)
+- [ ] **Charts and diagrams** render with proper spacing and legends
+- [ ] **Video thumbnails** display with play icon overlay
+- [ ] Lazy loading for images (don't load all images on page load)
+- [ ] Responsive: images scale properly on mobile and desktop
+- [ ] Follow design system spacing and shadows
+- [ ] QC tested image rendering, lightbox, lazy loading
+- [ ] Accessible: alt text, captions for screen readers
+
+---
+
+### Feature 3.7: Button & Interactive Element Rendering
+**Job to be Done**: Users want to interact with suggested actions and buttons within chat responses
+
+**User Story**:
+As a user, I want to click action buttons in AI responses (e.g., "Learn More", "Try Now", "Refine Search"), so I can take next actions directly
+
+**Definition of Done**:
+- [ ] **Primary buttons** render with brand-primary color, white text, proper styling
+- [ ] **Secondary buttons** render with surface-alt, border, proper styling
+- [ ] **Link buttons** render as colored text with hover underline (text-accent)
+- [ ] Button text is **semibold, base size** (font-semibold, text-base)
+- [ ] Button padding: **10px 16px** (height 40px, min-width 100px)
+- [ ] Button hover state: **shadow-3, scale 1.02, color transition 150ms ease-out**
+- [ ] Button active state: **shadow-2, color darkened**
+- [ ] Button disabled state: **opacity-50, cursor-not-allowed**
+- [ ] **Button groups** (multiple buttons in row) have proper spacing (gap-2)
+- [ ] Buttons follow design system radius (rounded-base 8px)
+- [ ] **Icon buttons** (ghost style) for common actions (share, copy, delete)
+- [ ] Icon buttons: transparent bg, text-primary, hover bg-surface-hover
+- [ ] QC tested button interactions, hover states, disabled states
+- [ ] Accessible: proper button semantics, keyboard navigation, focus indicators
 
 ---
 
@@ -344,6 +468,22 @@ As admin, I want rate limiting per API key, so no single user overloads the syst
 
 ### Job to be Done
 "Power users want to create custom AI bots trained on their company's specific knowledge"
+
+---
+
+### Use Cases Supported by This Epic
+
+| Use Case | Description | Required Features |
+|----------|-------------|-------------------|
+| **1. Create Domain-Specific Bot** | Build a custom bot with specialized knowledge | 5.1 (Create), 5.2 (Document Upload), 5.4 (Config) |
+| **2. Train Bot on Company Data** | Upload documents to make bot company-aware | 5.2 (Document Upload), 5.3 (KB Search) |
+| **3. Manage Multiple Bots** | Organize and maintain several bots | 5.6 (Manage Bots), 5.4 (Config) |
+| **4. Share Bot with Team** | Make bot available to others | 5.5 (Make Public), 5.6 (Manage) |
+| **5. Monitor Bot Usage** | Track how bot is being used | 7.2 (Bot Analytics) - *from Epic 7* |
+
+**⚠️ Dependencies from other Epics:**
+- Bot Analytics: Epic 7.2 (needed to track bot usage)
+- Chat Interface: Epic 2.1 (needed to actually chat with bot)
 
 ---
 
@@ -475,6 +615,20 @@ As a user, I want to edit, delete, or duplicate my bots, so I can keep my bot li
 
 ### Job to be Done
 "Users want to search company documents and policies directly through the chatbot"
+
+---
+
+### Use Cases Supported by This Epic
+
+| Use Case | Description | Required Features |
+|----------|-------------|-------------------|
+| **1. Search Company Information** | Find policies, benefits, procedures across company docs | 6.1 (Document Mgmt), 6.2 (Full-Text Search), 6.3 (Semantic Search) |
+| **2. Access Document Details** | View full documents or relevant excerpts | 6.4 (Document Preview), 6.1 (Document Mgmt) |
+| **3. Stay Updated on Company Policies** | Reference latest company-wide documents in chat | 6.1 (Document Mgmt), 6.4 (Document Preview) |
+
+**⚠️ Dependencies from other Epics:**
+- Chat Integration: Epic 2.1 (needed to reference docs in conversation)
+- Document Upload Interface: Epic 2.3 or 5.2 (users upload docs via chat or bot builder)
 
 ---
 
@@ -877,7 +1031,7 @@ As user, I want my data encrypted and private, so I feel safe sharing info with 
 |------|----------|-------|--------|
 | 1. Auth | 3 features | Sprint 1 | 8 days |
 | 2. Chat | 5 features | Sprint 2 | 12 days |
-| 3. UI Components | 4 features | Sprint 2-3 | 10 days |
+| 3. UI Components | **7 features** | Sprint 2-3 | **16 days** |
 | 4. High-Code | 4 features | Sprint 2-3 | 10 days |
 | 5. Bot Builder | 6 features | Sprint 2-3 | 15 days |
 | 6. Knowledge Base | 4 features | Sprint 2-3 | 12 days |
@@ -885,4 +1039,78 @@ As user, I want my data encrypted and private, so I feel safe sharing info with 
 | 8. Settings | 3 features | Sprint 1-2 | 6 days |
 | 9. Infrastructure | 6 features | Throughout | 20 days |
 
-**Total Effort**: ~111 developer-days (6-8 weeks with 4 engineers)
+**Total Effort**: ~~111~~ **117 developer-days** (6-8 weeks with 4 engineers)
+
+---
+
+## Cross-Epic Use Case Mapping
+
+This section shows which EPICs support each user job and highlights dependencies:
+
+### Epic 2 Use Cases (Chat Core)
+```
+Search Information
+├── Primary: Epic 2 (2.5, 2.3, 2.2, 2.4)
+├── Supporting: Epic 6 (6.2, 6.3, 6.4) - semantic search, document preview
+└── Supporting: Epic 3 (3.1, 3.4) - response formatting
+
+Ask Common Knowledge Questions
+├── Primary: Epic 2 (2.1, 2.2, 2.4)
+├── Supporting: Epic 3 (3.1, 3.2, 3.4, 3.6, 3.7) - response formatting, images, buttons
+└── Supporting: Epic 8 (8.2) - model selection
+
+Draft/Write Text
+├── Primary: Epic 2 (2.1, 2.3, 2.4)
+├── Supporting: Epic 3 (3.1, 3.3, 3.7) - text formatting, file download, buttons
+├── Supporting: Epic 8 (8.2) - model selection
+└── Supporting: Epic 6 (6.4) - document preview (for reference)
+
+Summarize Documents
+├── Primary: Epic 2 (2.3, 2.1, 2.2)
+├── Supporting: Epic 3 (3.1, 3.3, 3.5, 3.6) - response formatting, file download, lists, images
+├── Supporting: Epic 6 (6.4) - document preview
+└── Supporting: Epic 8 (8.2) - model selection
+
+Search Information
+├── Primary: Epic 2 (2.5, 2.3, 2.2, 2.4)
+├── Supporting: Epic 3 (3.1, 3.5, 3.6, 3.7) - text formatting, cards/lists, images, action buttons
+├── Supporting: Epic 6 (6.2, 6.3, 6.4) - search, semantic search, document preview
+└── Supporting: Epic 8 (8.2) - model selection
+```
+
+### Epic 5 Use Cases (Bot Builder)
+```
+Create Domain-Specific Bot
+├── Primary: Epic 5 (5.1, 5.2, 5.4)
+├── Supporting: Epic 2 (2.1) - chat interface
+└── Supporting: Epic 3 - response formatting
+
+Train Bot on Company Data
+├── Primary: Epic 5 (5.2, 5.3)
+└── Supporting: Epic 6 - knowledge base search
+
+Share Bot with Team
+├── Primary: Epic 5 (5.5, 5.6)
+└── Supporting: Epic 7 (7.2) - bot analytics
+
+Monitor Bot Usage
+├── Primary: Epic 7 (7.2) - bot analytics
+└── Supporting: Epic 5 (5.6) - manage bots
+```
+
+### Epic 6 Use Cases (Knowledge Base)
+```
+Search Company Information
+├── Primary: Epic 6 (6.1, 6.2, 6.3)
+└── Supporting: Epic 2 (2.1) - chat interface
+
+Access Document Details
+├── Primary: Epic 6 (6.1, 6.4)
+└── Supporting: Epic 5 (5.3) - bot knowledge base search
+```
+
+**Key Insights:**
+- Epic 2, 3, 6, 8 are tightly **interdependent** for basic use cases
+- Epic 5 is **semi-independent** but relies on Epic 2 for chat and Epic 7 for usage tracking
+- Epic 7 (Analytics) serves as **supporting infrastructure** for other Epics
+- **Dependency chain**: Epic 2 ← requires → Epic 3, 6, 8
