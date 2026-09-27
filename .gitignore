@@ -1,0 +1,13 @@
+# E2E test run outputs (regenerable)
+.playwright-cli/
+
+# macOS
+.DS_Store
+
+# Secrets (never commit)
+.env
+.env.*
+*.pem
+*.key
+credentials/
+secrets/

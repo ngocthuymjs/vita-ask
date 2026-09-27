@@ -1,0 +1,1374 @@
+Design Tokens
+Explore available tokens from Apps SDK UI
+All
+Text colors
+Semantic colors
+Fonts
+Radius
+Shadows
+Motion
+Text colors
+	
+color-text
+	gray-1000
+
+	
+color-text-secondary
+	gray-500
+
+	
+color-text-tertiary
+	gray-400
+
+	
+color-text-inverse
+	gray-0
+Semantic colors
+	
+color-text-primary
+	gray-1000
+
+	
+color-background-primary-soft
+	gray-100
+
+	
+color-background-primary-soft-hover
+	gray-150
+
+	
+color-background-primary-soft-active
+	gray-200
+
+	
+color-background-primary-soft-alpha
+	alpha-08
+
+	
+color-background-primary-soft-alpha-hover
+	alpha-12
+
+	
+color-background-primary-soft-alpha-active
+	alpha-16
+
+	
+color-text-primary-soft
+	color-text
+
+	
+color-background-primary-soft-alt
+	alpha-02
+
+	
+color-border-primary-soft-alt
+	alpha-06
+
+	
+color-text-primary-soft-alt
+	color-text
+
+	
+color-background-primary-surface
+	alpha-05
+
+	
+color-border-primary-surface
+	alpha-05
+
+	
+color-text-primary-surface
+	color-text
+
+	
+color-background-primary-solid
+	gray-900
+
+	
+color-background-primary-solid-hover
+	gray-700
+
+	
+color-background-primary-solid-active
+	gray-600
+
+	
+color-text-primary-solid
+	white
+
+	
+color-background-primary-outline-hover
+	alpha-02
+
+	
+color-background-primary-outline-active
+	alpha-04
+
+	
+color-border-primary-outline
+	alpha-16
+
+	
+color-border-primary-outline-hover
+	alpha-20
+
+	
+color-text-primary-outline
+	color-text
+
+	
+color-text-primary-outline-hover
+	color-text
+
+	
+color-background-primary-ghost-hover
+	alpha-08
+
+	
+color-background-primary-ghost-active
+	alpha-12
+
+	
+color-text-primary-ghost
+	color-text
+
+	
+color-text-primary-ghost-hover
+	color-text
+
+	
+color-ring-primary
+	color-ring
+
+	
+color-ring-primary-soft
+	color-ring-primary
+
+	
+color-ring-primary-solid
+	color-ring-primary
+
+	
+color-ring-primary-outline
+	color-ring-primary
+
+	
+color-ring-primary-ghost
+	color-ring-primary
+
+	
+color-background-secondary-soft
+	gray-100
+
+	
+color-background-secondary-soft-hover
+	gray-150
+
+	
+color-background-secondary-soft-active
+	gray-200
+
+	
+color-background-secondary-soft-alpha
+	alpha-08
+
+	
+color-background-secondary-soft-alpha-hover
+	alpha-12
+
+	
+color-background-secondary-soft-alpha-active
+	alpha-16
+
+	
+color-text-secondary-soft
+	color-text
+
+	
+color-background-secondary-soft-alt
+	alpha-02
+
+	
+color-border-secondary-soft-alt
+	alpha-06
+
+	
+color-text-secondary-soft-alt
+	color-text
+
+	
+color-background-secondary-solid
+	gray-500
+
+	
+color-background-secondary-solid-hover
+	gray-600
+
+	
+color-background-secondary-solid-active
+	gray-700
+
+	
+color-text-secondary-solid
+	white
+
+	
+color-background-secondary-outline-hover
+	alpha-02
+
+	
+color-background-secondary-outline-active
+	alpha-04
+
+	
+color-border-secondary-outline
+	alpha-16
+
+	
+color-border-secondary-outline-hover
+	alpha-20
+
+	
+color-text-secondary-outline
+	color-text-secondary
+
+	
+color-text-secondary-outline-hover
+	color-text
+
+	
+color-background-secondary-ghost-hover
+	alpha-08
+
+	
+color-background-secondary-ghost-active
+	alpha-12
+
+	
+color-text-secondary-ghost
+	color-text-secondary
+
+	
+color-text-secondary-ghost-hover
+	color-text
+
+	
+color-ring-secondary
+	color-ring
+
+	
+color-ring-secondary-soft
+	color-ring-secondary
+
+	
+color-ring-secondary-solid
+	color-ring-secondary
+
+	
+color-ring-secondary-outline
+	color-ring-secondary
+
+	
+color-ring-secondary-ghost
+	color-ring-secondary
+
+	
+color-text-info
+	blue-700
+
+	
+color-background-info-soft
+	blue-50
+
+	
+color-background-info-soft-hover
+	blue-75
+
+	
+color-background-info-soft-active
+	blue-75
+
+	
+color-background-info-soft-alpha
+	blue-a50
+
+	
+color-background-info-soft-alpha-hover
+	blue-a75
+
+	
+color-background-info-soft-alpha-active
+	blue-a75
+
+	
+color-text-info-soft
+	blue-600
+
+	
+color-background-info-surface
+	blue-a25
+
+	
+color-border-info-surface
+	blue-a25
+
+	
+color-text-info-surface
+	blue-600
+
+	
+color-background-info-solid
+	blue-400
+
+	
+color-background-info-solid-hover
+	blue-500
+
+	
+color-background-info-solid-active
+	blue-500
+
+	
+color-text-info-solid
+	white
+
+	
+color-background-info-outline-hover
+	blue-a25
+
+	
+color-background-info-outline-active
+	blue-a25
+
+	
+color-border-info-outline
+	blue-500
+
+	
+color-border-info-outline-hover
+	blue-500
+
+	
+color-text-info-outline
+	blue-500
+
+	
+color-text-info-outline-hover
+	blue-500
+
+	
+color-background-info-ghost-hover
+	blue-a50
+
+	
+color-background-info-ghost-active
+	blue-a50
+
+	
+color-text-info-ghost
+	blue-500
+
+	
+color-text-info-ghost-hover
+	blue-500
+
+	
+color-ring-info
+	color-ring
+
+	
+color-ring-info-soft
+	color-ring-info
+
+	
+color-ring-info-solid
+	color-ring-info
+
+	
+color-ring-info-outline
+	color-ring-info
+
+	
+color-ring-info-ghost
+	color-ring-info
+
+	
+color-text-warning
+	orange-700
+
+	
+color-background-warning-soft
+	orange-50
+
+	
+color-background-warning-soft-hover
+	orange-75
+
+	
+color-background-warning-soft-active
+	orange-75
+
+	
+color-background-warning-soft-alpha
+	orange-a50
+
+	
+color-background-warning-soft-alpha-hover
+	orange-a75
+
+	
+color-background-warning-soft-alpha-active
+	orange-a75
+
+	
+color-text-warning-soft
+	orange-700
+
+	
+color-background-warning-surface
+	orange-a25
+
+	
+color-border-warning-surface
+	orange-a25
+
+	
+color-text-warning-surface
+	orange-700
+
+	
+color-background-warning-solid
+	orange-500
+
+	
+color-background-warning-solid-hover
+	orange-600
+
+	
+color-background-warning-solid-active
+	orange-600
+
+	
+color-text-warning-solid
+	white
+
+	
+color-background-warning-outline-hover
+	orange-a25
+
+	
+color-background-warning-outline-active
+	orange-a25
+
+	
+color-border-warning-outline
+	orange-500
+
+	
+color-border-warning-outline-hover
+	orange-500
+
+	
+color-text-warning-outline
+	orange-500
+
+	
+color-text-warning-outline-hover
+	orange-500
+
+	
+color-background-warning-ghost-hover
+	orange-a50
+
+	
+color-background-warning-ghost-active
+	orange-a50
+
+	
+color-text-warning-ghost
+	orange-500
+
+	
+color-text-warning-ghost-hover
+	orange-500
+
+	
+color-ring-warning
+	color-ring
+
+	
+color-ring-warning-soft
+	color-ring-warning
+
+	
+color-ring-warning-solid
+	color-ring-warning
+
+	
+color-ring-warning-outline
+	color-ring-warning
+
+	
+color-ring-warning-ghost
+	color-ring-warning
+
+	
+color-text-caution
+	yellow-700
+
+	
+color-background-caution-soft
+	yellow-50
+
+	
+color-background-caution-soft-hover
+	yellow-75
+
+	
+color-background-caution-soft-active
+	yellow-75
+
+	
+color-background-caution-soft-alpha
+	yellow-a50
+
+	
+color-background-caution-soft-alpha-hover
+	yellow-a75
+
+	
+color-background-caution-soft-alpha-active
+	yellow-a75
+
+	
+color-text-caution-soft
+	yellow-800
+
+	
+color-background-caution-surface
+	yellow-a25
+
+	
+color-border-caution-surface
+	yellow-a25
+
+	
+color-text-caution-surface
+	yellow-800
+
+	
+color-background-caution-solid
+	yellow-600
+
+	
+color-background-caution-solid-hover
+	yellow-700
+
+	
+color-background-caution-solid-active
+	yellow-700
+
+	
+color-background-caution-outline-hover
+	yellow-a25
+
+	
+color-background-caution-outline-active
+	yellow-a25
+
+	
+color-border-caution-outline
+	yellow-700
+
+	
+color-border-caution-outline-hover
+	yellow-700
+
+	
+color-text-caution-outline
+	yellow-700
+
+	
+color-text-caution-outline-hover
+	yellow-700
+
+	
+color-background-caution-ghost-hover
+	yellow-a50
+
+	
+color-background-caution-ghost-active
+	yellow-a50
+
+	
+color-text-caution-ghost
+	yellow-700
+
+	
+color-text-caution-ghost-hover
+	yellow-700
+
+	
+color-ring-caution
+	color-ring
+
+	
+color-ring-caution-soft
+	color-ring-caution
+
+	
+color-ring-caution-solid
+	color-ring-caution
+
+	
+color-ring-caution-outline
+	color-ring-caution
+
+	
+color-ring-caution-ghost
+	color-ring-caution
+
+	
+color-text-danger
+	red-700
+
+	
+color-background-danger-soft
+	red-50
+
+	
+color-background-danger-soft-hover
+	red-75
+
+	
+color-background-danger-soft-active
+	red-75
+
+	
+color-background-danger-soft-alpha
+	red-a50
+
+	
+color-background-danger-soft-alpha-hover
+	red-a75
+
+	
+color-background-danger-soft-alpha-active
+	red-a75
+
+	
+color-text-danger-soft
+	red-600
+
+	
+color-background-danger-surface
+	red-a25
+
+	
+color-border-danger-surface
+	red-a25
+
+	
+color-text-danger-surface
+	red-600
+
+	
+color-background-danger-solid
+	red-500
+
+	
+color-background-danger-solid-hover
+	red-600
+
+	
+color-background-danger-solid-active
+	red-600
+
+	
+color-text-danger-solid
+	white
+
+	
+color-background-danger-outline-hover
+	red-a25
+
+	
+color-background-danger-outline-active
+	red-a25
+
+	
+color-border-danger-outline
+	red-500
+
+	
+color-border-danger-outline-hover
+	red-500
+
+	
+color-text-danger-outline
+	red-500
+
+	
+color-text-danger-outline-hover
+	red-500
+
+	
+color-background-danger-ghost-hover
+	red-a50
+
+	
+color-background-danger-ghost-active
+	red-a50
+
+	
+color-text-danger-ghost
+	red-500
+
+	
+color-text-danger-ghost-hover
+	red-500
+
+	
+color-ring-danger
+	red-200
+
+	
+color-ring-danger-soft
+	color-ring-danger
+
+	
+color-ring-danger-solid
+	color-ring-danger
+
+	
+color-ring-danger-outline
+	color-ring-danger
+
+	
+color-ring-danger-ghost
+	color-ring-danger
+
+	
+color-text-success
+	green-700
+
+	
+color-background-success-soft
+	green-50
+
+	
+color-background-success-soft-hover
+	green-75
+
+	
+color-background-success-soft-active
+	green-75
+
+	
+color-background-success-soft-alpha
+	green-a50
+
+	
+color-background-success-soft-alpha-hover
+	green-a75
+
+	
+color-background-success-soft-alpha-active
+	green-a75
+
+	
+color-text-success-soft
+	green-600
+
+	
+color-background-success-surface
+	green-a25
+
+	
+color-border-success-surface
+	green-a25
+
+	
+color-text-success-surface
+	green-600
+
+	
+color-background-success-solid
+	green-400
+
+	
+color-background-success-solid-hover
+	green-500
+
+	
+color-background-success-solid-active
+	green-500
+
+	
+color-text-success-solid
+	white
+
+	
+color-background-success-outline-hover
+	green-a25
+
+	
+color-background-success-outline-active
+	green-a25
+
+	
+color-border-success-outline
+	green-500
+
+	
+color-border-success-outline-hover
+	green-500
+
+	
+color-text-success-outline
+	green-500
+
+	
+color-text-success-outline-hover
+	green-500
+
+	
+color-background-success-ghost-hover
+	green-a50
+
+	
+color-background-success-ghost-active
+	green-a50
+
+	
+color-text-success-ghost
+	green-500
+
+	
+color-text-success-ghost-hover
+	green-500
+
+	
+color-ring-success
+	color-ring
+
+	
+color-ring-success-soft
+	color-ring-info
+
+	
+color-ring-success-solid
+	color-ring-info
+
+	
+color-ring-success-outline
+	color-ring-info
+
+	
+color-ring-success-ghost
+	color-ring-info
+
+	
+color-text-discovery
+	purple-700
+
+	
+color-background-discovery-soft
+	purple-50
+
+	
+color-background-discovery-soft-hover
+	purple-75
+
+	
+color-background-discovery-soft-active
+	purple-75
+
+	
+color-background-discovery-soft-alpha
+	purple-a50
+
+	
+color-background-discovery-soft-alpha-hover
+	purple-a75
+
+	
+color-background-discovery-soft-alpha-active
+	purple-a75
+
+	
+color-text-discovery-soft
+	purple-600
+
+	
+color-background-discovery-surface
+	purple-a25
+
+	
+color-border-discovery-surface
+	purple-a25
+
+	
+color-text-discovery-surface
+	purple-600
+
+	
+color-background-discovery-solid
+	purple-400
+
+	
+color-background-discovery-solid-hover
+	purple-500
+
+	
+color-background-discovery-solid-active
+	purple-500
+
+	
+color-text-discovery-solid
+	white
+
+	
+color-background-discovery-outline-hover
+	purple-a25
+
+	
+color-background-discovery-outline-active
+	purple-a25
+
+	
+color-border-discovery-outline
+	purple-500
+
+	
+color-border-discovery-outline-hover
+	purple-500
+
+	
+color-text-discovery-outline
+	purple-500
+
+	
+color-text-discovery-outline-hover
+	purple-500
+
+	
+color-background-discovery-ghost-hover
+	purple-a50
+
+	
+color-background-discovery-ghost-active
+	purple-a50
+
+	
+color-text-discovery-ghost
+	purple-500
+
+	
+color-text-discovery-ghost-hover
+	purple-500
+
+	
+color-ring-discovery
+	color-ring
+
+	
+color-ring-discovery-soft
+	color-ring
+
+	
+color-ring-discovery-solid
+	color-ring
+
+	
+color-ring-discovery-outline
+	color-ring
+
+	
+color-ring-discovery-ghost
+	color-ring
+
+	
+color-background-disabled
+	alpha-05
+
+	
+color-border-disabled
+	alpha-06
+
+	
+color-text-disabled
+	gray-400
+
+	
+color-ring
+	blue-500
+
+	
+color-border
+	alpha-10
+
+	
+color-border-subtle
+	alpha-05
+
+	
+color-border-strong
+	alpha-15
+
+	
+color-surface
+	gray-0
+
+	
+color-surface-secondary
+	gray-50
+
+	
+color-surface-tertiary
+	gray-75
+
+	
+color-surface-elevated
+	gray-0
+
+	
+color-surface-elevated-secondary
+	gray-50
+Fonts
+font-sans
+	ui-sans-serif, -apple-system, system-ui, ..., sans-serif
+
+font-mono
+	ui-monospace, "SFMono-Regular", "SF Mono", ..., monospace
+
+font-weight-normal
+	400
+
+font-weight-medium
+	500
+
+font-weight-semibold
+	600
+
+font-weight-bold
+	700
+
+font-tracking-wide
+	0em
+
+font-tracking-normal
+	-0.01em
+
+font-tracking-tight
+	-0.02em
+
+font-heading-5xl-size
+	4.5remâ72px
+
+font-heading-5xl-line-height
+	4.5remâ72px
+
+font-heading-5xl-weight
+	font-weight-semibold
+
+font-heading-5xl-tracking
+	tracking-tight
+
+font-heading-4xl-size
+	3.75remâ60px
+
+font-heading-4xl-line-height
+	3.75remâ60px
+
+font-heading-4xl-weight
+	font-weight-semibold
+
+font-heading-4xl-tracking
+	tracking-tight
+
+font-heading-3xl-size
+	3remâ48px
+
+font-heading-3xl-line-height
+	3remâ48px
+
+font-heading-3xl-weight
+	font-weight-semibold
+
+font-heading-3xl-tracking
+	tracking-tight
+
+font-heading-2xl-size
+	2.25remâ36px
+
+font-heading-2xl-line-height
+	2.625remâ42px
+
+font-heading-2xl-weight
+	font-weight-semibold
+
+font-heading-2xl-tracking
+	tracking-tight
+
+font-heading-xl-size
+	2remâ32px
+
+font-heading-xl-line-height
+	2.375remâ38px
+
+font-heading-xl-weight
+	font-weight-semibold
+
+font-heading-xl-tracking
+	tracking-tight
+
+font-heading-lg-size
+	1.5remâ24px
+
+font-heading-lg-line-height
+	1.75remâ28px
+
+font-heading-lg-weight
+	font-weight-semibold
+
+font-heading-lg-tracking
+	tracking-normal
+
+font-heading-md-size
+	1.25remâ20px
+
+font-heading-md-line-height
+	1.625remâ26px
+
+font-heading-md-weight
+	font-weight-semibold
+
+font-heading-md-tracking
+	tracking-normal
+
+font-heading-sm-size
+	1.125remâ18px
+
+font-heading-sm-line-height
+	1.625remâ26px
+
+font-heading-sm-weight
+	font-weight-semibold
+
+font-heading-sm-tracking
+	tracking-normal
+
+font-heading-xs-size
+	1remâ16px
+
+font-heading-xs-line-height
+	1.5remâ24px
+
+font-heading-xs-weight
+	font-weight-semibold
+
+font-heading-xs-tracking
+	tracking-normal
+
+font-text-lg-size
+	1.125remâ18px
+
+font-text-lg-line-height
+	1.8125remâ29px
+
+font-text-lg-weight
+	font-weight-normal
+
+font-text-lg-tracking
+	tracking-normal
+
+font-text-md-size
+	1remâ16px
+
+font-text-md-line-height
+	1.5remâ24px
+
+font-text-md-weight
+	font-weight-normal
+
+font-text-md-tracking
+	tracking-normal
+
+font-text-sm-size
+	0.875remâ14px
+
+font-text-sm-line-height
+	1.25remâ20px
+
+font-text-sm-weight
+	font-weight-normal
+
+font-text-sm-tracking
+	tracking-normal
+
+font-text-xs-size
+	0.75remâ12px
+
+font-text-xs-line-height
+	1.125remâ18px
+
+font-text-xs-weight
+	font-weight-normal
+
+font-text-xs-tracking
+	tracking-wide
+
+font-text-2xs-size
+	0.625remâ10px
+
+font-text-2xs-line-height
+	0.875remâ14px
+
+font-text-2xs-weight
+	font-weight-normal
+
+font-text-2xs-tracking
+	tracking-wide
+
+font-text-3xs-size
+	0.5remâ8px
+
+font-text-3xs-line-height
+	0.75remâ12px
+
+font-text-3xs-weight
+	font-weight-normal
+
+font-text-3xs-tracking
+	tracking-wide
+Radius
+	
+radius-2xs
+	0.125remâ2px
+
+	
+radius-xs
+	0.25remâ4px
+
+	
+radius-sm
+	0.375remâ6px
+
+	
+radius-md
+	0.5remâ8px
+
+	
+radius-lg
+	0.625remâ10px
+
+	
+radius-xl
+	0.75remâ12px
+
+	
+radius-2xl
+	1remâ16px
+
+	
+radius-3xl
+	1.25remâ20px
+
+	
+radius-4xl
+	1.5remâ24px
+
+	
+radius-full
+	9999px
+Shadows
+shadow-hairline
+	
+
+
+shadow-100
+	
+
+
+shadow-100-strong
+	
+
+
+shadow-100-stronger
+	
+
+
+shadow-200
+	
+
+
+shadow-200-strong
+	
+
+
+shadow-200-stronger
+	
+
+
+shadow-300
+	
+
+
+shadow-300-strong
+	
+
+
+shadow-300-stronger
+	
+
+
+shadow-400
+	
+
+
+shadow-400-strong
+	
+
+
+shadow-400-stronger
+	
+Breakpoints
+breakpoint-xs
+	380px
+
+breakpoint-sm
+	576px
+
+breakpoint-md
+	768px
+
+breakpoint-lg
+	1024px
+
+breakpoint-xl
+	1280px
+
+breakpoint-2xl
+	1536px
+Motion
+cubic-enter
+	cubic-bezier(0.19, 1, 0.22, 1)
+
+cubic-exit
+	cubic-bezier(0.8, 0, 0.4, 1)
+
+cubic-exit-snappy
+	cubic-bezier(0.65, 0, 0.4, 1)
+
+cubic-move
+	cubic-bezier(0.65, 0, 0.35, 1)
+
+transition-duration-basic
+	150ms
+
+transition-ease-basic
+	ease"
+
+
+await page.evaluate('() => document.querySelector('iframe')?.contentDocument?.body?.innerText');
